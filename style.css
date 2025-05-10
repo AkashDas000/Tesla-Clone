@@ -24,6 +24,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
 }
 
 .hero-first{
@@ -42,6 +43,55 @@ nav{
     padding-top: 150px;
     text-align: center;
     color: white;
+}
+
+.final{
+    display: none;
+}
+.itemsss{
+    width: 100vw;
+    height: 70vh;
+    margin-top: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /* left: 0; */
+    background-color: whitesmoke;
+}
+
+.inside-items{
+    /* margin: 50px 200px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    background-color: whitesmoke;
+}
+.inside-items img:nth-child(5) {
+  grid-column: 1; /* Puts 5th image under 1st image */
+}
+
+.inside-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    margin: 40px 0;
+    border: none;
+    border: 1px solid rgba(223, 222, 222, 0.991);
+}
+
+
+.list-items{
+    background-color: whitesmoke;
+    margin: 50px;
+}
+
+.list-items li{
+   list-style: none;
+   margin-bottom: 10px;
 }
 
 .first-content h1{
@@ -593,4 +643,5 @@ footer>p{
     padding-right: 10px;
     /* font-size: 0.9rem; */
     /* letter-spacing: 0.008rem; */
+
 }
