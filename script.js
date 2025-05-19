@@ -13,6 +13,14 @@ const discoverbar = document.querySelector('.discover-bar')
 const shop = document.querySelector('.shop')
 const shopbar = document.querySelector('.shop-bar')
 
+const loading = document.querySelector('.loading');
+
+document.addEventListener('DOMContentLoaded', function(){
+    setTimeout(()=>{
+        loading.style.display = "none";
+    }, 3000);
+})
+
 vehicels.addEventListener('mouseover', function(){
     final.style.display = 'block'
     energybar.style.display = 'none'
